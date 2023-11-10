@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>AVL TREE VISUALIZER</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="">
+<link rel="icon" href="https://imgs.search.brave.com/BrNBRHI26KuhWz4d_wJ-tCEHT52pYFchRMqTnRVZmao/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA0/OTA3MTUxNC92ZWN0/b3IvZmFtaWx5LXRy/ZWUtdmVjdG9yLWlj/b24tZGVzaWduLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1L/UndaUzc1TmVQUWhM/amJ5bC1pUEVLNFhq/X3JnQVdTblZqYjd0/T25ydkFrPQ" type="image/x-icon" />
+
+<body>
+    <header><em><b>AVL TREE VISUALIZER</em></b></header>
+
+<input type="text" id="value" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Press Enter the Node " size="45">
+<button type="button" onclick="InsertNode();">Insert</button>
+<button type="button" onclick="DeleteNode();">Delete</button>
+<button type="button" onclick="SearchNode();">Search</button>
+<button type="button" onclick="Print(bst.inorder);">Inorder</button>
+<button type="button" onclick="Print(bst.preorder);">Preorder</button>
+<button type="button" onclick="Print(bst.postorder);">Postorder</button>
+<br>
+<span id="msg"></span>
+
+<!-- load the d3.js library from // https://d3js.org Version 4.8.0. Copyright 2017 Mike Bostock. -->
+<script src="D3.minimum.js"></script>
+<script src="BST to AVL.js" charset="utf-8"></script>
+<script src="graph.js" charset="utf-8"></script>
+
+</body>

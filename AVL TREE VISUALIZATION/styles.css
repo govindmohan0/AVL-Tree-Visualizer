@@ -1,0 +1,104 @@
+
+body{
+    
+   background-color: #EC3713;
+}
+.node circle {
+    fill: #4f74cf; /* Blue fill color */
+    stroke: #2980b9; /* Darker stroke color */
+    stroke-width: 4px; /* Wider stroke width */
+    transition: fill 0.2s, stroke 0.2s; /* Smooth transition effect */
+  }
+  
+  /* Style the node text */
+  .node text {
+    font: 18px "Arial", sans-serif; /* Larger and different font family */
+    fill: #ffffff; /* White text color */
+  }
+  
+  /* Style internal nodes' text with a subtle shadow */
+  .node--internal text {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Soft shadow effect */
+  }
+  
+  /* Style the links */
+  .link {
+    stroke: #ffffff; /* Dark gray stroke color */
+    stroke-width: 1.5px; /* Thinner stroke width */
+    opacity: 0.6; /* Reduced opacity for subtlety */
+    transition: stroke 0.2s, opacity 0.2s; /* Smooth transition effect */
+  }
+  
+  /* Add a hover effect for the nodes */
+  .node:hover circle {
+    fill: #e74c3c; /* Red color on hover */
+    stroke: #c0392b; /* Darker red stroke on hover */
+  }
+  
+  /* Add a hover effect for the links */
+  .link:hover {
+    stroke: #e74c3c; /* Red color on hover */
+  }
+  
+  /* Add a subtle animation to the links */
+  .link {
+    animation: dash 3s linear infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dasharray: 10, 5;
+    }
+  }
+  
+  /* Add a pulsating animation for the nodes on hover */
+  .node:hover circle {
+    animation: pulse 0.5s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Add a glowing effect for the links on hover */
+  .link:hover {
+    filter: drop-shadow(0 0 5px #e74c3c);
+  }
+/* Set the background color to black */
+body {
+    background-color: #000;
+    color: #fff; /* Set text color to white for better contrast */
+  }
+  
+  /* Style all buttons */
+  button {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 5px 10px; /* Padding around the text */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    font-size: 14px; /* Font size */
+    margin: 5px; /* Spacing between buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Add smooth transitions */
+  
+    /* Add a subtle shadow on hover */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Change button background on hover */
+  button:hover {
+    background-color: rgb(147, 12, 14); /* Red background color on hover */
+    transform: scale(1.1); /* Slight scale increase on hover */
+  }
+
+
+  
+  
+
+  
