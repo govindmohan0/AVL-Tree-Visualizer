@@ -52,13 +52,13 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// Draws the tree in treeData
+// Draws the tree in treeData 
 function drawTree() {
 
 	// Clear the canvas
 	d3.select("svg").remove();
 
-	// This json represents the tree
+	// This json files represents the tree
 	var treeData;
 	// If the tree is not empty
 	if (bst.root)
